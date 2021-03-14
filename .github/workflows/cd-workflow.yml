@@ -1,6 +1,6 @@
 name: Docker CD
 on:
-  push:
+  workflow_dispatch:
     branches:
       - master
 jobs:
@@ -16,5 +16,5 @@ jobs:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
           registry: docker.pkg.github.com
-          repository: sotrxii/pandora-cooking-server/pandora-cooking-server
+          repository: dedbeef/phone-recorder-cooking/phone-recorder-cooking
           tag_with_ref: true
